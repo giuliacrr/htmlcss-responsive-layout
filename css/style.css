@@ -189,11 +189,11 @@ h3 {
     flex-wrap:nowrap;
   }
   .demo-perks {
-    width:100%;
+    width:calc(100%/3);
   }
   .phone-div {
     flex-wrap:wrap;
-    width:160%;
+    width:calc(((100% / 3) * 2) + 20px);
   }
   .phone {
     margin-bottom:-20px;
@@ -213,6 +213,7 @@ h3 {
 }
 
 @media screen and (min-width: 1200px){
+  /*header + 1st section*/
   .nav-button {
     display:none;
   }
@@ -247,10 +248,10 @@ h3 {
   .phone-div {
     flex-grow:1;
   }
-
   .btn {
     justify-content: flex-start;
   }
+  /*second section*/
 }
 
 
