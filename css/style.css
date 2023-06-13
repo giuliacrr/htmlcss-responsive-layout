@@ -137,20 +137,19 @@ h3 {
   .section {
     padding:30px 20px;
   }
-
   .wrap {
     flex-wrap:nowrap;
-  }
-  .phone-div {
-    flex-wrap:wrap;
   }
   .demo-perks {
     width:100%;
   }
+  .phone-div {
+    flex-wrap:wrap;
+    width:160%;
+  }
   .phone {
     margin-bottom:-20px;
   }
-
   .container{
     padding: 0px 0px;
   }
@@ -186,11 +185,8 @@ h3 {
     margin:auto;
     gap:20px;
   }
-  .media-width {
-
-  }
   .phone {
-    margin-bottom:-262px;
+    margin-bottom:-21px;
   }
   .phone-div {
     flex-grow:1;
