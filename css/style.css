@@ -60,7 +60,7 @@ h3 {
 
 
 /*-----------------MAIN-----------------*/
-
+/*DEMO SECTION + PERKS*/
 .demo-perks {
   background-color:var(--bg-main-color);
   border-radius: 25px;
@@ -115,6 +115,53 @@ h3 {
   padding:20px;
 }
 
+/*STRATEGIC PLANNING SECTION*/
+.strategic-section-bg {
+  background-color: var(--secondary-color);
+  width:100%;
+}
+
+.app-development {
+  background-color: white;
+  border-radius: 25px;
+  padding:16px;
+  margin-top:30px;
+}
+
+.scroll-btn button {
+  border:none;
+  background-color: transparent;
+  font-size:1.5rem;
+}
+
+.scroll-btn {
+  padding:15px 20px;
+  background-color: var(--secondary-color);
+  width:fit-content;
+  border-radius: 50%;
+  margin:auto;
+  margin-top:15px;
+  margin-bottom:15px;
+}
+
+.strat-plan {
+  color: white;
+  text-align: center;
+}
+
+.sp-title {
+  margin: 30px 0px;
+}
+
+.dev-app-txt {
+  line-height: 1.8rem;
+  text-align: center;
+}
+
+.dev-app-txt h3 {
+  font-size: 1.2rem;
+  margin:10px 0px;
+}
 /*-----------------RESPONSIVE SETTINGS-----------------*/
 
 @media screen and (min-width: 375px) {
@@ -128,6 +175,7 @@ h3 {
 }
 
 @media screen and (min-width: 550px){
+  /*first section - get a demo application*/
   .row {
     width:100%;
     max-width:1200px;
@@ -153,7 +201,15 @@ h3 {
   .container{
     padding: 0px 0px;
   }
-  
+  /*second dection - strategic planning and app development*/
+  .stat-plan-txt h2 {
+    font-size: 4rem;
+  }
+  .stat-plan-txt h2,
+  .stat-plan-txt p {
+    text-align: left;
+  }
+
 }
 
 @media screen and (min-width: 1200px){
