@@ -124,7 +124,7 @@ h3 {
 .app-development {
   background-color: white;
   border-radius: 25px;
-  padding:16px;
+container  padding:16px;
   margin-top:30px;
 }
 
@@ -162,6 +162,66 @@ h3 {
   font-size: 1.2rem;
   margin:10px 0px;
 }
+.wrap-strategic {
+  flex-wrap: wrap;
+}
+/*PARTNERS*/
+.card {
+  background-color:var(--secondary-color);
+  border-radius: 35px;
+  padding:30px 20px;
+  text-align: center;
+  margin-bottom:20px;
+}
+
+.nat-pic { 
+  background-image: url(../img/testimonial1.jpg);
+  background-size: cover;
+  background-position: center;
+  margin:auto;
+  height:230px;
+  width:230px;
+  border-radius:50%;
+}
+
+.celia-pic {
+  background-image: url(../img/testimonial2.jpg);
+  background-size: cover;
+  background-position: center;
+  margin:auto;
+  height:230px;
+  width:230px;
+  border-radius:50%;
+}
+
+.bob-pic {
+  background-image: url(../img/testimonial3.jpg);
+  background-size: cover;
+  background-position: center;
+  margin:auto;
+  height:230px;
+  width:230px;
+  border-radius:50%;
+}
+
+.card i,
+.card p,
+.card span {
+  color:white;
+  line-height: 1.8rem;
+}
+
+.card p {
+  margin-bottom:30px;
+}
+
+.card span {
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+
+
 /*-----------------RESPONSIVE SETTINGS-----------------*/
 
 @media screen and (min-width: 375px) {
@@ -171,9 +231,7 @@ h3 {
   .flex {
     display:flex;
   }
-  
 }
-
 @media screen and (min-width: 550px){
   /*first section - get a demo application*/
   .row {
@@ -207,10 +265,37 @@ h3 {
   }
   .stat-plan-txt h2,
   .stat-plan-txt p {
-    text-align: left;
+    text-align: left; 
+  }
+  .strat-planning-full {
+    width:100%;
+  }
+}
+@media screen and (min-width: 900px) {
+  /*second section*/
+  .strat-planning-full {
+    width:45%;
+  }
+  .strategic-section-bg .container {
+    max-width:900px;
+    margin:auto;
+  }
+  .stat-plan-txt h2 {
+    margin-top:170px;
+    margin-bottom:50px;
+    font-size: 2.5rem;
   }
 
+  .app-development {
+    margin-top:200px;
+  }
+
+  .wrap-strategic {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
 }
+
 
 @media screen and (min-width: 1200px){
   /*header + 1st section*/
@@ -251,7 +336,7 @@ h3 {
   .btn {
     justify-content: flex-start;
   }
-  /*second section*/
+
 }
 
 
