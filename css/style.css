@@ -60,6 +60,15 @@ button:hover {
 
 .burger-menu-nav {
   display:none;
+  position:absolute;
+  top:50px;
+  background-color: var(--main-color);
+  width:100%;
+  left:0;
+}
+
+.bm-btn:focus~.burger-menu-nav {
+  display:block;
 }
 
 .header-pad {
@@ -76,10 +85,10 @@ button:hover {
   font-size:1.3rem;
 }
 
-
-
 .links {
   align-items: center;
+  list-style: none;
+  justify-content: flex-end;
 }
 
 .links a {
@@ -641,7 +650,7 @@ button:hover {
 
 @media screen and (min-width: 1200px) {
   /*header + 1st section*/
-  .nav-button {
+  .bm-btn {
     display:none;
   }
   .burger-menu-nav {
