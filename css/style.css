@@ -655,6 +655,7 @@ button:hover {
   }
   .burger-menu-nav {
     display:block;
+    position:initial;
   }
   .links {
     display:flex;
@@ -693,4 +694,5 @@ button:hover {
     margin-top:30px;
     margin-bottom:30px;
   }
+
 }
