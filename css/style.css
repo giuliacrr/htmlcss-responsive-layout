@@ -11,6 +11,10 @@
   font-family: Arial, Helvetica, sans-serif
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 header {
   width:100%;
   background-color: var(--main-color);
@@ -44,6 +48,10 @@ h3 {
   padding:16px;
 }
 
+button:hover {
+  cursor: pointer;
+}
+
 /*-----------------HEADER-----------------*/
 .head-flex-attr {
   justify-content: space-between;
@@ -58,6 +66,39 @@ h3 {
   padding: 10px 25px;
 }
 
+.bm-btn {
+  background-color: transparent;
+  border:none;
+  color:white;
+}
+
+.bm-btn i {
+  font-size:1.3rem;
+}
+
+
+
+.links {
+  align-items: center;
+}
+
+.links a {
+  text-decoration: none;
+  color:white;
+}
+
+.links li {
+  margin:10px;
+}
+
+.menu-btn {
+  color:black;
+  background-color: white;
+  padding:10px 20px;
+  border-radius: 25px;
+  border:none;
+  font-size:1.2rem;
+}
 
 /*-----------------MAIN-----------------*/
 /*DEMO SECTION + PERKS*/
@@ -124,7 +165,7 @@ h3 {
 .app-development {
   background-color: white;
   border-radius: 25px;
-container  padding:16px;
+  padding:16px;
   margin-top:30px;
 }
 
@@ -166,42 +207,55 @@ container  padding:16px;
   flex-wrap: wrap;
 }
 /*PARTNERS*/
+.partners {
+  text-align: center;
+}
+
+.partners h4 {
+  color: #d5d4f4;
+}
+
+.partners h2 {
+  color:var(--secondary-color);
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+  margin-top:20px;
+  margin-bottom:20px;
+}
+
+.partners p {
+  line-height: 2rem;
+  font-size: 1rem;
+}
+
 .card {
   background-color:var(--secondary-color);
   border-radius: 35px;
   padding:30px 20px;
   text-align: center;
   margin-bottom:20px;
+  margin-top:10px;
+}
+
+.card-pic-div {
+  margin:auto;
+  height:230px;
+  width:230px;
+  border-radius:50%;
+  background-size: cover;
+  background-position: center;
 }
 
 .nat-pic { 
   background-image: url(../img/testimonial1.jpg);
-  background-size: cover;
-  background-position: center;
-  margin:auto;
-  height:230px;
-  width:230px;
-  border-radius:50%;
 }
 
 .celia-pic {
   background-image: url(../img/testimonial2.jpg);
-  background-size: cover;
-  background-position: center;
-  margin:auto;
-  height:230px;
-  width:230px;
-  border-radius:50%;
 }
 
 .bob-pic {
   background-image: url(../img/testimonial3.jpg);
-  background-size: cover;
-  background-position: center;
-  margin:auto;
-  height:230px;
-  width:230px;
-  border-radius:50%;
 }
 
 .card i,
@@ -220,11 +274,185 @@ container  padding:16px;
   font-size: 1.2rem;
 }
 
+/*BENEFIT WORKING WITH US*/
+.benefit-section-bg {
+  background-color: var(--secondary-color);
+  padding-top:30px;
+  padding-bottom:50px;
+}
+
+.benefit-section {
+  max-width:1200px;
+  margin:auto;
+  gap:20px;
+}
+
+.benefits {
+  background-color: white;
+  width:100%;
+  padding:30px 20px;
+  border-radius: 20px;
+  margin-top:20px;
+  color:var(--secondary-color);
+}
+
+.benefits p {
+  color: rgb(90, 90, 90);
+  font-weight: 700;
+  line-height: 1.8rem;
+}
+
+.benefit-title {
+  font-size:2rem;
+}
+
+.benefits h2 {
+  font-size: 2.5rem;
+}
+
+.benefits h3 {
+  margin-bottom:20px;
+  margin-top:20px;
+}
+
+.benefit-title{
+  font-size: 1.8rem;
+  text-align: center;
+  color:white;
+}
+
+.violet-btn {
+  background-color: var(--secondary-color);
+  margin-top:30px;
+  margin-bottom:30px;
+}
+
+/*About Us*/
+.about-us {
+  max-width:1000px;
+  margin:auto;
+}
+
+.about-us-txt h2{
+  font-size: 2.5rem;
+  color:var(--secondary-color);
+  margin-top:30px;
+  margin-bottom:30px;
+}
+
+.about-us-txt p {
+  line-height: 2.3rem;
+  color:rgb(90, 90, 90);
+  font-weight: 600;
+  margin-bottom:30px;
+}
+
+.linkedin-pic {
+  background-image: url(../img/about.jpg);
+  position:relative;
+  margin-bottom:20px;
+  margin:0;
+}
+
+.linkedin-pic span {
+  color:var(--secondary-color);
+  font-size:4rem;
+  position:absolute;
+  top:0;
+  left:75%;
+}
+
+.linkedin-txt {
+  color:var(--secondary-color);
+  font-weight: 700;
+  font-size: 1.7rem;
+  line-height: 2.3rem;
+  margin-bottom:20px;
+}
+
+.linkedin-btn {
+  border-radius:25px;
+  background-color: var(--secondary-color);
+  color:white;
+  border:none;
+  padding:10px 20px;
+}
+/*-----------------FOOTER-----------------*/
+/*GET STARTED*/
+.get-start-bg {
+  background-color: var(--secondary-color);
+}
+
+.get-started {
+    margin:auto;
+    text-align: center;
+  }
+
+.get-started h3 {
+  font-size:1rem;
+  font-weight: 100;
+  color: #d5d4f4;
+  margin-top:30px;
+}
+
+.get-started h2 {
+  font-size: 2rem;
+  color:white;
+  margin-top:20px;
+  margin-bottom:20px;
+}
+
+.get-started h1 {
+  font-size:3rem;
+  color:#fdc15f;
+}
+
+.get-started p {
+  color:white;
+  line-height:1.8rem;
+  margin-top:20px;
+  margin-bottom:20px;
+}
+
+.get-started-btn button {
+  background-color: white;
+  color:var(--secondary-color);
+  font-size:1rem;
+  font-weight: 700;
+  padding: 20px 60px;
+  border-radius:30px;
+  margin-bottom:20px;
+}
+
+.get-started span,
+.get-started a {
+  color:white;
+  font-size:0.8rem;
+}
+
+/*Foote links*/
+
+.foot-links-bg {
+  background-color: #333;
+}
+.foot-width {
+  max-width:500px;
+  margin:auto;
+  color:white;
+  text-align: center;
+}
+
+.foot-width div {
+  margin:40px;
+}
+
+.foot-width a {
+  color:var(--secondary-color);
+}
 
 
 /*-----------------RESPONSIVE SETTINGS-----------------*/
-
-@media screen and (min-width: 375px) {
+@media screen and (min-width: 375px){
   .container {
     width:100%;
   }
@@ -232,6 +460,7 @@ container  padding:16px;
     display:flex;
   }
 }
+
 @media screen and (min-width: 550px){
   /*first section - get a demo application*/
   .row {
@@ -270,7 +499,76 @@ container  padding:16px;
   .strat-planning-full {
     width:100%;
   }
+  /*Partners*/
+  .partners {
+    max-width: 1200px;
+    margin:auto;
+  }
+  /*benefits*/
+  .benefit-section-bg {
+    background-color: var(--secondary-color);
+    padding-top:30px;
+  }
+  .benefit-section {
+    padding:0px 20px;
+    display:flex;
+    flex-wrap: wrap;
+  }
+  .benefits {
+    width: calc(50% - 20px);
+    margin:auto;
+  }
+  .benefits h2{
+    font-size: 4rem;
+  }
+  .benefit-title{
+    font-size: 2rem;
+    text-align: center;
+    color:white;
+    padding-bottom:30px;
+  }
 }
+
+@media screen and (min-width: 750px){
+  /*Partners*/
+  .card {
+    display:flex;
+    align-items: center;
+    text-align: left;
+  }
+  .card p, 
+  .card span {
+    margin-left:30px;
+  }
+  /*Benefits*/
+  .benefit-section-bg {
+    padding:20px;
+  }
+  .benefit-section {
+    padding:0;
+  }
+  /*About us*/
+  .about-us {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .about-us-txt {
+    width:60%;
+  }
+  .linkedin {
+    width:30%;
+    margin-top:30px;
+  }
+  /*Get started*/
+  .get-started p {
+    width:60%;
+    margin:auto;
+    margin-top: 30px;
+    margin-bottom:30px;
+  }
+}
+
 @media screen and (min-width: 900px) {
   /*second section*/
   .strat-planning-full {
@@ -285,19 +583,63 @@ container  padding:16px;
     margin-bottom:50px;
     font-size: 2.5rem;
   }
-
   .app-development {
     margin-top:200px;
   }
-
   .wrap-strategic {
     flex-wrap: nowrap;
     justify-content: space-between;
   }
+  /*partners*/
+  .partners h4 {
+    font-size:1.2rem;
+  }
+  .partners h2 {
+    font-size: 2.5rem;
+  }
+  /*benefits*/
+  .benefit-section-bg {
+    padding:30px;
+  }
+  .benefit-section {
+    padding:0;
+  }
+  .benefits {
+    background-color: white;
+    width:calc((100% / 3) - 20px);
+    padding: 30px 20px;
+    border-radius: 20px;
+  }
+  .benefit-title{
+    font-size: 2.3rem;
+    text-align: center;
+    color:white;
+    padding-bottom:30px;
+  }
+  /*About Us*/
+  .about-us {
+    display:flex;
+  }
+  /*Get started*/
+  .get-started h1 {
+    font-size:5rem;
+  }
+  .get-started h2 {
+    font-size:3.5rem;
+  }
+  .get-started h3 {
+    font-size:1.9rem;
+  }
+  .get-started p {
+    max-width:500px;
+  }
+  .foot-width-s  {
+    color:var(--secondary-color);
+    max-width:480px;
+  }
 }
 
-
-@media screen and (min-width: 1200px){
+@media screen and (min-width: 1200px) {
   /*header + 1st section*/
   .nav-button {
     display:none;
@@ -309,7 +651,7 @@ container  padding:16px;
     display:flex;
     list-style: none;
   }
-  .head-max-width{
+  .head-max-width {
     max-width:1200px;
     margin:auto;
     padding-left:0px;
@@ -333,10 +675,13 @@ container  padding:16px;
   .phone-div {
     flex-grow:1;
   }
-  .btn {
+  .btn{
     justify-content: flex-start;
   }
-
+  /*Benefits*/
+  .benefits h2{
+    font-size: 5rem;
+    margin-top:30px;
+    margin-bottom:30px;
+  }
 }
-
-
